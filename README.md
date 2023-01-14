@@ -34,7 +34,7 @@ python manage.py createsuperuser
 ```
 python manage.py runserver
 ```
-### Acceder a la API
+### Acceder a la API desarrollo
 * GET      http://127.0.0.1:8000/api/projects/
 
 * POST     http://127.0.0.1:8000/api/projects/
@@ -42,6 +42,9 @@ python manage.py runserver
 * PATCH    http://127.0.0.1:8000/api/projects/${id}/
 
 * DELETE   http://127.0.0.1:8000/api/projects/${id}/
+
+
+### Acceder a la API producción
 
 
 
