@@ -34,22 +34,36 @@ python manage.py createsuperuser
 ```
 python manage.py runserver
 ```
-### Acceder a la API desarrollo
-* GET      http://127.0.0.1:8000/api/projects/
+# Acceder a la API
+## URL
+### https://crud-apirest-django.onrender.com/
 
-* POST     http://127.0.0.1:8000/api/projects/
+## headers:
 
-* PATCH    http://127.0.0.1:8000/api/projects/${id}/
+```Authorization: Token ${token}```
 
-* DELETE   http://127.0.0.1:8000/api/projects/${id}/
+* GET      http://crud-apirest-django.onrender.com/api/v1/projects/
+
+* POST     http://crud-apirest-django.onrender.com/api/v1/projects/
+
+* PATCH    http://crud-apirest-django.onrender.com/api/v1/projects/${id}/
+
+* DELETE   http://crud-apirest-django.onrender.com/api/v1/projects/${id}/
 
 
-### Acceder al panel de administración
-http://127.0.0.1:8000/admin/
+# Crear un usuario
+### http://crud-apirest-django.onrender.com/api/v1/user/create_user/
+post > body: {
+  "username": "...",
+  "first_name": "...",
+  "last_name": "...",
+  "email": "...",
+  "password": "..."
+}
 
-### Acceder a la documentación de django-rest-framework
-https://www.django-rest-framework.org/
-
-# Acceder a la API producción
-
-### https://crud-apirest-django.onrender.com/api/projects/
+# Obtener token via login
+### http://crud-apirest-django.onrender.com/api/v1/user/token/
+post > body: {
+  "username": "...",
+  "password": "..."
+}
