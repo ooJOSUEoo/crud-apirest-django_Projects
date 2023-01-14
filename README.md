@@ -44,13 +44,12 @@ python manage.py runserver
 * DELETE   http://127.0.0.1:8000/api/projects/${id}/
 
 
-### Acceder a la API producción
-
-
-
 ### Acceder al panel de administración
 http://127.0.0.1:8000/admin/
 
 ### Acceder a la documentación de django-rest-framework
 https://www.django-rest-framework.org/
 
+# Acceder a la API producción
+
+### https://crud-apirest-django.onrender.com/api/projects/
