@@ -52,7 +52,7 @@ python manage.py runserver
 
 
 # Crear un usuario
-### http://crud-apirest-django.onrender.com/api/v1/user/create_user/
+### http://crud-apirest-django.onrender.com/api/v1/user/
 post > body: {
   "username": "...",
   "first_name": "...",
@@ -62,7 +62,7 @@ post > body: {
 }
 
 # Obtener token via login
-### http://crud-apirest-django.onrender.com/api/v1/user/token/
+### http://crud-apirest-django.onrender.com/api/v1/users/
 post > body: {
   "username": "...",
   "password": "..."
